@@ -1,0 +1,128 @@
+.cart {
+  padding: 48px 0;
+}
+
+.cart h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.cart__empty {
+  text-align: center;
+  padding: 80px 0;
+  color: var(--gray);
+}
+
+.cart__empty span {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.cart__empty p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.cart__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 32px;
+  align-items: start;
+}
+
+.cart__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart__item {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__item-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cart__item-info p {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.cart__item-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.cart__remove {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 16px;
+}
+
+.cart__summary {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 28px;
+  position: sticky;
+  top: 100px;
+}
+
+.cart__summary h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.cart__summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--gray);
+}
+
+.cart__summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.cart__order-btn {
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.cart__order-btn:hover {
+  background: #d4911c;
+  transform: translateY(-1px);
+}
